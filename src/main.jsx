@@ -69,7 +69,7 @@ function App() {
 
   return <div className="app-shell">
     <aside className="sidebar">
-      <div className="brand"><img className="brand-logo" src="/logo.avif" alt="Логотип строительной компании" /><span>строй<span className="brand-accent">трекер</span></span></div>
+      <div className="brand"><img className="brand-logo" src={`${import.meta.env.BASE_URL}logo.avif`} alt="Логотип строительной компании" /><span>строй<span className="brand-accent">трекер</span></span></div>
       <div className="workspace-label">РАБОЧЕЕ ПРОСТРАНСТВО <ChevronDown size={14} /></div>
       <nav>
         <button className="nav-item active"><LayoutDashboard size={18} /> Обзор</button>
